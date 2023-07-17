@@ -1,10 +1,10 @@
-import { Router } from 'express'
-import axios from 'axios'
+const express = require('express')
+const router = express.Router()
+
+const axios = require('axios')
 
 const client_id = 'j8PIiTpiuPi6PzcQD4MV'
 const client_secret = 'DuZ9KkT_ZH'
-
-export const router = Router()
 
 function searchBooks(req, res) {
   const query = req.query.query
@@ -31,6 +31,7 @@ router.get('/', function(req, res, next) {
   res.render('index.html');
 });
 
+module.exports = router;
 
 
 /*
