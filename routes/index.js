@@ -1,3 +1,4 @@
+/*
 const express = require('express')
 const router = express.Router()
 
@@ -26,22 +27,21 @@ function searchBooks(req, res) {
 
 router.get('/books', searchBooks)
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index.html');
-});
-
-module.exports = router;
-
-
-/*
-var express = require('express');
-var router = express.Router();
-
-/* 주석임 GET home page.
+/* GET home page.
 router.get('/', function(req, res, next) {
   res.render('index.html');
 });
 
 module.exports = router;
 */
+
+
+var express = require('express');
+var router = express.Router();
+
+/* 주석임 GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index.html');
+});
+
+module.exports = router;
