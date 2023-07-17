@@ -24,7 +24,7 @@ function bookSearch(req, res, next) {
     .catch((err) => next(err));
 }
 
-imageRouter.get("https://port-0-node-express-fhkg2nlk6cocuj.sel4.cloudtype.app/", bookSearch);
+imageRouter.get("https://port-0-node-express-fhkg2nlk6gtfkp.sel4.cloudtype.app/", bookSearch);
 
 
 /*
