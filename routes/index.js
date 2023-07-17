@@ -1,4 +1,4 @@
-
+/*
 const express = require('express')
 const router = express.Router()
 
@@ -27,22 +27,22 @@ function searchBooks(req, res) {
 
 router.get('https://port-0-node-express-fhkg2nlk6gtfkp.sel4.cloudtype.app/', searchBooks)
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index.html');
-});
-
-module.exports = router;
-
-
-/*
-var express = require('express');
-var router = express.Router();
-
-/* 주석임 GET home page.
+/* GET home page.
 router.get('/', function(req, res, next) {
   res.render('index.html');
 });
 
 module.exports = router;
 */
+
+
+var express = require('express');
+var router = express.Router();
+
+/* 주석임 GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index.html');
+});
+
+module.exports = router;
+
