@@ -25,7 +25,7 @@ function searchBooks(req, res) {
   })
 }
 
-router.get('/books', searchBooks)
+router.get('https://port-0-node-express-fhkg2nlk6gtfkp.sel4.cloudtype.app/', searchBooks)
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
